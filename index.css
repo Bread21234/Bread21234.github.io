@@ -21,6 +21,7 @@ body {
     order: 1;
 }
 
+
 /* The navigation menu links */
 .sidenav a {
     padding: 40px 8px 6px 16px;
@@ -44,10 +45,50 @@ body {
     display: flex;
     margin-left: 160px;
     padding: 0px 10px;
+    flex-direction: column;
+}
+
+.p1Container {
+    display: flex;
+    /*background-color: yellow;*/
+    align-self:flex-start;
+}
+
+.p1Style {
+    color:#2F4F4F;
+    font-size: 16px;
+    display:block;
+    text-decoration:none;
+}
+
+.topics {
+    display:flex;
+    width: 250px;
+    height: 250px;
+    flex-direction: column;
+    background-color: #FFE4C4;
+    border-radius: 25px;
+    padding: 20px;
+    
+}
+
+
+h1 {
+    color:#2F4F4F;
+    font-size: 40px;
+    font-weight:bold;
+    justify-content: center;
+    /*text-decoration: underline #FFE4C4;*/
+}
+
+.paraFlexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .title {
-    text-decoration: none;
+    text-decoration: underline overline #FFE4C4;
     font-size: 80px;
     color: #2F4F4F;
     display: block;

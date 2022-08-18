@@ -1,0 +1,25 @@
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    border-color: #2F4F4F;
+}
+
+table {
+    width: 40%;
+    height: 30%;
+    align-self:center;
+}
+
+
+th {
+    background-color: #FFE4C4;
+    text-align: center;
+    font-weight: bold;
+}
+
+td {
+    color: #FFE4C4;
+    font-size: 12 px;
+}
+
+
