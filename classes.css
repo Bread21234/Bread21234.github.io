@@ -22,4 +22,18 @@ td {
     font-size: 12 px;
 }
 
+.otherDivs {
+    background-color: #FFE4C4;
+    border-radius: 15px;
+    color: #2F4F4F;
+}
 
+
+.otherContainer {
+    max-height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
