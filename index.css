@@ -21,6 +21,10 @@ body {
     order: 1;
 }
 
+.image1 {
+    height: 10px;
+    width: 10px;
+}
 
 /* The navigation menu links */
 .sidenav a {
@@ -62,20 +66,22 @@ body {
 }
 
 .topics {
-    display:flex;
-    width: 250px;
-    height: 250px;
-    flex-direction: column;
     background-color: #FFE4C4;
     border-radius: 25px;
-    padding: 20px;
     
 }
 
+.topicsFlex {
+    display:flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 250px;
+    height: 400px;       
+}
 
 h1 {
     color:#2F4F4F;
-    font-size: 40px;
+    font-size: 30px;
     font-weight:bold;
     justify-content: center;
     /*text-decoration: underline #FFE4C4;*/
@@ -93,6 +99,7 @@ h1 {
     color: #2F4F4F;
     display: block;
 }
+
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
