@@ -66,13 +66,30 @@ body {
     
 }
 
+
 .topicsFlex {
     display:flex;
     flex-direction: column;
     padding: 20px;
     width: 250px;
-    height: 400px;       
+    height: 400px;
 }
+.centerFlex {
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+}
+
+.essay {
+    background-color: #FFE4C4;
+    border-radius: 25px;
+    display:flex;
+    self-align: center;
+    max-width: 100%;
+    height: auto;
+}
+
 
 h1 {
     color:#2F4F4F;
