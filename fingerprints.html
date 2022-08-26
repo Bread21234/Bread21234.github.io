@@ -1,27 +1,125 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Fingerprints</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">  
+  </head>
+  
   <body class="bodyContainer">
-    
-    <link rel="stylesheet" href="index.css">
-
 
     <h1 class="title maincontainer">Fingerprints</h1>
 
     <div class="centerFlex">
-      <p1 class="essay">The internet is a massive network of public data. Since it is public, it allows data traffic to flow around the globe freely, using intermediate carries to move about. With traffic going every which way, its easy for people to copy a website and redirect traffic with bad intentions. 
-      </p1>
-      
+      <p class="essay">	The internet is a massive network of public data. Since it is public, it
+	allows data traffic to flow around the globe freely,
+	using intermediate carriers to move about. With traffic going every which way, it's easy for
+	people to copy a website and redirect traffic with bad intentions. The original HTTP web
+	connections were neer encrypted or attempted to authenticate. As a result, more sites began to
+	switch over from HTTP to more secure connections such as HTTPS. The primary purposes of HTTPS
+	connections are to encrypt data to keep it secure from eavesdroppers as well as authenticate
+	in order to prove that users communicate with the intended website.The original HTTP web
+	connections were neer encrypted or attempted to authenticate. As a result, more sites began to
+	switch over from HTTP to more secure connections such as HTTPS. The primary purposes of HTTPS
+	connections are to encrypt data to keep it secure from eavesdroppers as well as authenticate
+	in order to prove that users communicate with the intended website.
+	<br>
+	<br>
+	In order to encrypt data, HTTPS uses a Secure Sockets Layer (SSL). Developed in 1995 by
+	Netscape, SSL was designed to ensure "...privacy, authentication, and data integrity in
+	Internet communications"(Cloudflare, 2022). When some private institutions such as
+	corporations, schools, etc. began to lose visibility, they developed a new technology called
+	HTTPS Proxy Appliances. These devices "...circumvent our most basic assumption and guarantee
+	of Internet browser privacy…"and work to destroy security (Gibson Research Corporation,
+	2020). These proxies work through entities called "Certificate Authorities"(CA) to whom web
+	sites "prove their identity in the real physical world using incorporation documentation...”
+	(Gibson Research Corporation, 2020). When a website has proven its identity, the CA will
+	digitally sign the site’s security certificate which contains an assertion of its
+	identity. Then, whenever an internet browser establishes a secure connection with a remote
+	site, that site must provide the previously signed certificate for the web browser to
+	inspect. After that, the browser can verify, through a list of reputable CAs, that the
+	website was properly signed and can be trusted.
+	<br>
+	<br>
+	While this system of security seems as though it can be trusted, it is easily subverted. Any
+	cooperation that wishes to monitor every action on its sites can easily get around SSL. All
+	they have to do is simply add an additional '‘Pseudo Certificate Authority’ to their
+	browsers or computers"(Gibson Research Corporation, 2020). Essentially, corporations can
+	simply install an HTTPS proxy and add an additional "trusted"CA to their computers. As a
+	result, any connection made on said corporation's network will be intercepted by the HTTPS
+	proxy which then creates a fake web certificate that it signs itself. Because the
+	impersonation of the web certificate is so convincing, neither the browser or user can
+	easily detect that their connection is not securely encrypted. Instead, the browser is
+	connected to the HTTPS proxy which it then decrypts, inspects, and logs. Moreover, the proxy
+	gains full access to everything the user does, effectively ensuring "...NO privacy and NO
+	security…"for the user (Gibson Research Corporation, 2020). The final step to this practice
+	is once the proxy has decrypted the user’s content, it impersonates the user and establishes
+	a new secure connection to the remote web server. The data is then encrypted as though
+	nothing had ever occurred.
+	<br>
+	<br>
+	Unfortunately, SSL interceptions cannot be prevented, but they can be detected. This is
+	because it is impossible to perfectly imitate any security certificate. Public and private
+	keys, used for encrypting and decrypting data, come in matched pairs. "It is not feasible to
+	derive one from the other..."yet they are unique to one another (Gibson Research Corporation,
+	2020). Through regular connections, website SSL security certificates supply the public
+	cryptographic key but hide the private key. Because the HTTPS proxy does not have the
+	private key that only the remote server has, the fake certificate authority is forced to use
+	another public key "...for which it [the proxy] does have a matching private key"(Gibson
+	Research Corporation, 2020). As a result, the public key made by the SSL-interception Proxy
+	Appliance must have a different public key. Therefore, SSL proxy applications must create a
+	fake certificate which possesses a different public for which it possesses the corresponding
+	private key, and that private key will never be the same as the actual remote server’s
+	private key. Cryptographic hashes (AKA fingerprints) "...are complex mathematical algorithms
+	which carefully process..."all information they receive which they use to create a unique
+	fingerprint for each certificate (Gibson Research Corporation, 2020). So if there is any
+	change whatsoever in the SSL-intercepting Proxy Application’s certificate from the genuine
+	certificate, it can be easily detected if an SSL interception is occurring.
+	<br>
+	<br>
+	However, there are issues with this test. Many smaller websites utilize only one security
+	certificate on its web server(s), but large companies with a greater web presence often use
+	more than one certificate, making them easier to obtain and manage. This means that not
+	every user will obtain the same security certificate. As a result, a "...comparison of
+	certificate fingerprints could erroneously lead people "... to conclude that their connections
+	were being intercepted"..."when the truth is that they simply received a different, but
+	equally valid certificate (Gibson Research Corporation, 2020). This event is known as a
+	false-positive. On the other hand, SSL-intercepting Proxy Appliances are highly configurable
+	and changeable. So, hypothetically, specific websites could be excluded from the SSL
+	interception, making the user believe that they are not being intercepted on a regular
+	basis. This event is known as a false negative.
+	<br>
+	Nowadays, many schools and governments spy on their users. Schools have the right to eavesdrop on
+	their users ONLY if those users are using a school based account. These accounts are specifically
+	for school purposes, so the school should have access to what is being done in order to prevent
+	cheating and maintain security. However, anything done outside of school accounts should not be
+	proctored, for doing so would be a huge violation of privacy. While there may be benefits security
+	wise to monitor everything all the time, it violates the basic right of privacy. This then creates a
+	slippery slope of what all a school/government can do to control the internet through means of
+	proctoring and filtering. Therefore, schools/governments should not have the ability to track your
+	communications outside of their accounts as anything done outside of those accounts does not pertain
+	to them. Sometimes, SSL interceptions are used for other reasons other than a cooperation spying on
+	its users. For instance, a man in the middle (MITM) attack is a term for when a "perpetrator
+	positions himself in a conversation between a user and an application"..."in order to eavesdrop or
+	impersonate one of the parties (imperva, 2022). The goal of these attacks is to steal personal
+	information such as passwords, account details, and credit card numbers. As a result, many of the
+	targets are the users of financial applications. The information gained from the attacks can be used
+	for identity theft or unapproved fund transfers.
+      <p>
+     
+    </div>
+
+    <div class="sidenav">
+      <a href="contents.html">Contents</a>
+      <a href="classes.html">Classes</a>
+      <a href="isp.html">Past Isp</a>
+      <a href="importance.html">Why?</a>
+      <a href="fingerprints.html">Fingerprint</a>
+      <a href="index.html">Home</a>
     </div>
     
+    
   </body>
-  
-  <div class="sidenav">
-    <a href="contents.html">Contents</a>
-    <a href="classes.html">Classes</a>
-    <a href="isp.html">Past Isp</a>
-    <a href="importance.html">Why?</a>
-    <a href="fingerprints.html">Fingerprints</a>
-    <a href="index.html">Home</a>
-  </div>
-  
+    
   
 </html>

@@ -1,50 +1,55 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My past ISP</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="isp.css">
+  </head>
+  
   <body class="bodyContainer">
-    <link rel="stylesheet" href="isp.css">  
     
     <h1 class="title mainContainer">My Past Isp</h1>
 
     <div>
       <h1>Concept:</h1>
-	<p1 class="contentFlex">The goal of my team's isp was to create a 2D bullet-hell rogue like. In the game, the player would traverse a map of randomly generated rooms, fighting enemies and obtaining items along the way. We themed our game around the underworld and the player's decent into hell.
-	</p1>
+	<p class="contentFlex">The goal of my team's isp was to create a 2D bullet-hell rogue like. In the game, the player would traverse a map of randomly generated rooms, fighting enemies and obtaining items along the way. We themed our game around the underworld and the player's decent into hell.
+	</p>
     </div>
       
       <div>
 	<h1>Motivation:</h1>
-	<p1 class="contentFlex">Most of the motivation came from my group's love of the genre. I spent many hours in a game called "Enter the Gungeon" and it inspired me to build this isp. Additionally, creating a videogame has always been a dream of mine, so I was excited to get a chance.
-	</p1>
+	<p class="contentFlex">Most of the motivation came from my group's love of the genre. I spent many hours in a game called "Enter the Gungeon" and it inspired me to build this isp. Additionally, creating a videogame has always been a dream of mine, so I was excited to get a chance.
+	</p>
       </div>
       
       <div>
 	<h1>Code Segments and Explanations:</h1>
 	<div class="contentFlex">
 	  <img class="codeSnip" src="https://codermerlin.com/users/william-clymire/Digital%20Portfolio/images/enemySpawnerCode.png" alt="EnemySpawn">
-	  <p1> Firstly, when the player enters the room, their 2D box collider interacts with the room. Then, the game checks whether or not that room has already been completed. If the room has not been completed, the room is locked by instantiating locked doors on all of the openings. The game then generates random enemies and a number of enemies based on what floor the player is on.
-	  </p1>
+	  <p> Firstly, when the player enters the room, their 2D box collider interacts with the room. Then, the game checks whether or not that room has already been completed. If the room has not been completed, the room is locked by instantiating locked doors on all of the openings. The game then generates random enemies and a number of enemies based on what floor the player is on.
+	  </p>
 	</div>
       <div class="contentFlex">
 	<img class="codeSnip" src="https://codermerlin.com/users/william-clymire/Digital%20Portfolio/images/playerHealthCode.png" alt="EnemyHealth">
-	<pl> On lines 7-14, I define GameObjects and integers for later. Immediately as the game begins, the retry button is hidden, the health is set to its max, and the actual healthbar displays the new info. The game checks constantly for whether or not health changes. If the player takes damage and health decreases, the current health is adjusted and along with it, the healthbar is too. If at any point the player loses all of their life, the death effect is plated and the retry button is revealed to the user. </p1> 
-</div>
+	<p> On lines 7-14, I define GameObjects and integers for later. Immediately as the game begins, the retry button is hidden, the health is set to its max, and the actual healthbar displays the new info. The game checks constantly for whether or not health changes. If the player takes damage and health decreases, the current health is adjusted and along with it, the healthbar is too. If at any point the player loses all of their life, the death effect is plated and the retry button is revealed to the user.
+	</p> 
+      </div>
+      </div>      
+      <div>
+	<h1>Conclusions:</h1>
+	<p class="contentFlex">One of the most crucial things I learned during my isp is that learning a new skill is much easier when there is a large, supportive community to help guide you. The project was possibly the most interesting project I had ever completed, and it was very satisfying to finish. I expected about the amount of code I needed, but I did not expect how much I needed to break things down. I was also pleasantly surpised with how intuitive both Unity and C# were; both were very user friendly and provided a lot of personal and skill expression.
+	</p>
+      </div>
+      
+	<!-- Side navigation -->
+	<div class="sidenav">
+	  <a href="contents.html">Contents</a>
+	  <a href="classes.html">Classes</a>
+	  <a href="isp.html">Past Isp</a>
+	  <a href="importance.html">Why?</a>
+	  <a href="index.html">Home</a>
+	</div>
 
-<div>
-  <h1>Conclusions:</h1>
-  <p1 class="contentFlex">One of the most crucial things I learned during my isp is that learning a new skill is much easier when there is a large, supportive community to help guide you. The project was possibly the most interesting project I had ever completed, and it was very satisfying to finish. I expected about the amount of code I needed, but I did not expect how much I needed to break things down. I was also pleasantly surpised with how intuitive both Unity and C# were; both were very user friendly and provided a lot of personal and skill expression.
-  </p1>
-</div>
-
-<div>
-
-
-
-</body>
-  <!-- Side navigation -->
-  <div class="sidenav">
-    <a href="contents.html">Contents</a>
-    <a href="classes.html">Classes</a>
-    <a href="isp.html">Past Isp</a>
-    <a href="importance.html">Why?</a>
-    <a href="index.html">Home</a>
-  </div>
+  </body>
+  
 </html>
