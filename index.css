@@ -84,12 +84,15 @@ body {
 .essay {
     background-color: #FFE4C4;
     border-radius: 25px;
-    display:flex; 
+    display:flex;
+    flex-direction: column;
     max-width: 100%;
     height: auto;
     padding: 25px;
     text-indent: 50x;
     color: #2F4F4F;
+    font-family: "Times New Roman", Times, serif;
+    font-size:18px;
 }
 
 
