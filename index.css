@@ -74,11 +74,19 @@ body {
     width: 250px;
     height: 400px;
 }
+.cover{
+    display:flex;
+    text-align:center;
+
+}
+
 .centerFlex {
     display:flex;
     justify-content: center;
     align-self: center;
     align-items: center;
+    flex-direction: column;
+    padding: 20px;
 }
 
 .essay {
