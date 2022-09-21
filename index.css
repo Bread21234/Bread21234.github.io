@@ -74,11 +74,6 @@ body {
     width: 250px;
     height: 400px;
 }
-.cover{
-    display:flex;
-    text-align:center;
-
-}
 
 .centerFlex {
     display:flex;
@@ -97,7 +92,7 @@ body {
     max-width: 100%;
     height: auto;
     padding: 25px;
-    text-indent: 50x;
+    text-indent: 50px;
     color: #2F4F4F;
     font-family: "Times New Roman", Times, serif;
     font-size:18px;

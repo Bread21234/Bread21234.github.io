@@ -1,0 +1,16 @@
+.font {
+    font-family: "Courier New", monospace;
+    font-size:18px;
+    text-indent: 50px;
+}
+
+.cover{
+    display:flex;
+    text-align:center;
+    padding:20px;
+}
+
+.citations{
+    text-indent: -50px;
+    padding-left: 50px;
+}
