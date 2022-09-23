@@ -6,11 +6,27 @@
 
 .cover{
     display:flex;
-    text-align:center;
-    padding:20px;
+    text-align:center; */
+    padding :20px;
 }
 
 .citations{
     text-indent: -50px;
     padding-left: 50px;
+}
+
+.subHeaders{
+    text-indent:0px;
+}
+
+.essay {
+    background-color: #FFE4C4;
+    border-radius: 25px;
+    display:flex;
+    flex-direction: column;
+    /*max-width: 80%;*/
+    max-width: 1000px;
+    height: auto;
+    padding: 25px;
+    color: #2F4F4F;
 }

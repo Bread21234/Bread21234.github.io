@@ -84,20 +84,6 @@ body {
     padding: 20px;
 }
 
-.essay {
-    background-color: #FFE4C4;
-    border-radius: 25px;
-    display:flex;
-    flex-direction: column;
-    max-width: 100%;
-    height: auto;
-    padding: 25px;
-    text-indent: 50px;
-    color: #2F4F4F;
-    font-family: "Times New Roman", Times, serif;
-    font-size:18px;
-}
-
 
 h1 {
     color:#2F4F4F;

@@ -12,7 +12,7 @@
     <h1 class="title maincontainer">Fingerprints</h1>
 
     <div class="centerFlex">
-      <div class="topics essay cover">
+      <div class="essay cover">
 	<h1>Fingerprinting: How it Affects and Is Used in Cyber Security</h1>
 	<br>
 	<b>William Clymire</b>
@@ -25,6 +25,7 @@
 
       <div class="centerFlex" style="padding:20px">
 	<div class="essay">
+	  <h1 class="subHeaders">HTTPS Breakdown: Why Connections Are Encrypted</h1>
 	  <p class="font"> The internet is a massive network of public data. Since it is public, it allows data traffic to flow around the globe
 	    freely, using intermediate carriers to move about. With traffic going every which way, it's easy for people to copy a website and redirect
 	    traffic with bad intentions. The original HTTP web connections were neer encrypted or attempted to authenticate. As a result, more sites
@@ -33,6 +34,7 @@
 	    HTTP web connections were neer encrypted or attempted to authenticate. As a result, more sites began to switch over from HTTP to more
 	    secure connections such as HTTPS. The primary purposes of HTTPS connections are to encrypt data to keep it secure from eavesdroppers as
 	    well as authenticate in order to prove that users communicate with the intended website.</p>
+	  <h1 class="subHeaders">Secure Sockets Layer (AKA: SSL) and How It Can Be Intercepted</h1>
 	  <p class="font">
 	    In order to encrypt data, HTTPS uses a Secure Sockets Layer (SSL). Developed in 1995 by Netscape, SSL was designed to ensure "...privacy,
 	    authentication, and data integrity in Internet communications"(Cloudflare, 2022). When some private institutions such as corporations,
@@ -54,6 +56,7 @@
 	    security…"for the user (Gibson Research Corporation, 2020). The final step to this practice is once the proxy has decrypted the user’s
 	    content, it impersonates the user and establishes a new secure connection to the remote web server. The data is then encrypted as though
 	    nothing had ever occurred.</p>
+	  <h1 class="subHeaders">How to Detect SSL Interceptions</h1>	    
 	  <p class="font">
 	    Unfortunately, SSL interceptions cannot be prevented, but they can be detected. This is because it is impossible to perfectly imitate any
 	    security certificate. Public and private keys, used for encrypting and decrypting data, come in matched pairs. "It is not feasible to derive
@@ -67,6 +70,7 @@
 	    create a unique fingerprint for each certificate (Gibson Research Corporation, 2020). So if there is any change whatsoever in the
 	    SSL-intercepting Proxy Application’s certificate from the genuine certificate, it can be easily detected if an SSL interception is
 	    occurring.</p>
+	  <h1 class="subHeaders">Beware of False-Positives and False-Negatives</h1>
 	  <p class="font">
 	    However, there are issues with this test. Many smaller websites utilize only one security certificate on its web server(s), but large
 	    companies with a greater web presence often use more than one certificate, making them easier to obtain and manage. This means that not every
@@ -75,6 +79,7 @@
 	    certificate (Gibson Research Corporation, 2020). This event is known as a false-positive. On the other hand, SSL-intercepting Proxy Appliances
 	    are highly configurable and changeable. So, hypothetically, specific websites could be excluded from the SSL interception, making the user
 	    believe that they are not being intercepted on a regular basis. This event is known as a false negative.</p>
+	  <h1 class="subHeaders">Should Governments/Schools Have the Right to Eavesdrop on Communications?</h1>
 	  <p class="font">
 	    Nowadays, many schools and governments spy on their users. Schools have the right to eavesdrop on their users ONLY if those users are using a
 	    school based account. These accounts are specifically for school purposes, so the school should have access to what is being done in order to
@@ -89,17 +94,21 @@
 	    applications. The information gained from the attacks can be used for identity theft or unapproved fund transfers.
 	  </p>
 	  
-	  <div class="padded">
+	  <div class="padded citations">
 	    <h1>Citations:</h1>
-	    <p>GRC | SSL TLS HTTPS web server certificate fingerprints. (n.d.). Retrieved August 26, 2022, from https://www.grc.com/fingerprints.htm
-	      <br>
-	      <br>
-	      How to secure your site with HTTPS | google search central ... (n.d.). Retrieved August 26, 2022, from
-	      https://developers.google.com/search/docs/advanced/security/https
-	      <br>
-	      <br>
-	      What is HTTPS? | cloudflare. cloudfare.com. (n.d.). Retrieved August 26, 2022, from https://www.cloudflare.com/learning/ssl/what-is-https/
-	    </p>
+	    <p>
+	      <em>GRC | SSL TLS HTTPS web server certificate
+	      fingerprints. (n.d.)</em>. Retrieved August 26, 2022, from
+	      https://www.grc.com/fingerprints.html</p>
+	    <p>
+	      <em>How to secure your site with HTTPS | google search
+	      central ... (n.d.)</em>. Retrieved August 26, 2022, from
+	      https://developers.google.com/search/docs/advanced/security/https </p>
+	    <p>
+	      <em>What is HTTPS? |
+	      cloudflare. cloudfare.com. (n.d.)</em>. Retrieved August 26,
+	      2022, from
+	      https://www.cloudflare.com/learning/ssl/what-is-https/</p> 
 	  </div>
 	</div>
       </div>

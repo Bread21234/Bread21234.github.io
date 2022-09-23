@@ -68,7 +68,7 @@ body {
     align-items: center;
 }
 
-h1 {
+h1, h3 {
     color:#2F4F4F;
     font-size: 30px;
     font-weight:bold;
@@ -83,7 +83,37 @@ h1 {
     display: block;
 }
 
+.tab{
+    overflow:hidden;
+    border: 1px solid #FFE4C4;
+    background-color: #FFE4C4;
+    display:flex;
+    justify-content:center;
+}
 
+.tab button {
+    background-color: inherit;
+    float:left;
+    border:none;
+    cursor:pointer;
+    padding: 14px 16px;
+    transition: 0.2s;
+    font-size:17px;
+}
+
+.tab button:hover{
+    background-color:#008B8B;
+}
+.tab button.active {
+    background-color: #008B8B;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #FFE4C4;
+    border-top: none;
+}
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
