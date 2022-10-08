@@ -15,13 +15,68 @@
     <a class="epicText" href="https://github.com/Bread21234/The-Fantastic-Furry-Four">-Github Link</a>
     <a class="epicText" href="https://docs.google.com/spreadsheets/d/10tIfyGQtIvTIO53cXNDZbA0gVFLmwbmxXX6J-IAe9zA/edit#gid=0">-Spreadsheet Link For Optimal Sorting</a>
     
-      <a class="epicText" href="https://docs.google.com/spreadsheets/d/1SSdgG1ZnAun1y_fCnWaen4yj32L7HysoMEhnB9AC6xc/edit#gid=0">-Spreadsheet for Sort Analysis Part 1</a>
-      <a class="epicText" href="https://github.com/Bread21234/BubbleSort">-Bubble Sort Repository</a>
-      <a class="epicText" href="https://github.com/Bread21234/InsertionSort">-Insertion Sort Repository</a>
-      <a class="epicText" href="https://github.com/Bread21234/SelectionSort">-Selection Sort Repository</a>
-      <div class="verticalFlex ">
+    <a class="epicText" href="https://docs.google.com/spreadsheets/d/1SSdgG1ZnAun1y_fCnWaen4yj32L7HysoMEhnB9AC6xc/edit#gid=0">-Spreadsheet for Sort Analysis Part 1</a>
+    <a class="epicText" href="https://github.com/Bread21234/BubbleSort">-Bubble Sort Repository</a>
+    <a class="epicText" href="https://github.com/Bread21234/InsertionSort">-Insertion Sort Repository</a>
+    <a class="epicText" href="https://github.com/Bread21234/SelectionSort">-Selection Sort Repository</a>
+    <div class="verticalFlex">
+
+      <div>
+	<img src="../images/SortAnalysisPart1.png" alt="Analysis part1">
+	<div class="essay topics">
+	  
+	  <h>Explanation:</h>
+	  <p>The graph displays a wide array of information made up of data from three sorting
+	    algorithms, bubble sort, selection sort, and insertion sort. As seen in the chart, each
+	    line is strictly a positive-sloping exponential function. This is because each algorithm
+	    has a time complexity of O(n^2), meaning, that they each increase
+	    quadratically. Additionally, the exponentiality of the graphs causes the slope to be
+	    extremely small towards the beginning of the line. For instance, the smaller word counts
+	    -values like 1, 10, and 100- have similar run times with a very small slope but sharply
+	    increase once word count becomes 10000.</p>
+	  
+	  <p>On the graph, there is a trend between the functions in which the shortest runtime for
+	    all files consisting of 100,000 words occurs on the ordered file. This is due to the
+	    fact that none of the algorithms have to sort much at all, instead they must only verify
+	    that the file is already sorted. Conversely, the largest runtime occurs on the
+	    reverse-ordered file of 100,000 words as the most changes have to be made to completely
+	    flip the list.</p>
+	  
+	  <p>The first algorithm used was bubble sort. Bubble sort works by essentially iterating
+	    through an array and swapping two adjacent elements that are out of order. It is
+	    generally considered one of the simplest algorithms and generally is not suitable for
+	    large data sets. This corresponds to many of the tests done as bubble sort dumped the
+	    core after timing out when being run on 100000 words reverse/randomly
+	    ordered. Furthermore, due to its inefficient nature, it has the highest runtime of all
+	    the functions.</p>
+	  
+	  <p>Next, selection sort was also used. Selection sort works by repeatedly finding the
+	    smallest element in an array and putting it at the beginning, continuing until the array
+	    is in ascending order. As a result, selection usually makes less swaps and comparisons
+	    to bubble sort. While selection is more efficient than bubble sort, it still has a time
+	    complexity of O(N^2), making it generally inefficient at large amounts of data. This is
+	    shown as the slope of the line begins to sharply increase with the x value.</p>
+	  
+	  <p>Finally, the most efficient sorting algorithm on this chart was insertion
+	    sort. Insertion sort is often compared to the way a person may sort cards in their hand;
+	    the array is essentially split into a sorted and unsorted part. Values from the unsorted
+	    part are picked and placed at the correct position in the sorting part until there are
+	    no longer unsorted values. Still, insertion sort has a time complexity of O(N^2) meaning
+	    that it can be quite slow. However, due to the lower number of swaps it needs to make
+	    compared to the other sorting algorithms shown on the graph, it has the fastest time
+	    when sorting all files with 100,000 words. An outlier on the graph that may appear odd
+	    at first glance is the runtime for insertion sort on 100,000 ordered words. While the
+	    other two sorting algorithms took multiple minutes to execute entirely, insertion sort
+	    did it in milliseconds due to the fact that it needed the least number of comparisons
+	    and never needed swaps. Selection sort always has a time complexity of n(n-1)/2 where
+	    insertion’s WORST case is n(n-1)/2; therefore, insertion was able to be drastically
+	    quicker.
+	  </p>
+	</div>
+      </div>
       
-      <img src="../images/OptimalSort-Page-1.drawio.png" alt="sorting"> 
+      <div>
+	<img src="../images/OptimalSort-Page-1.drawio.png" alt="sorting"> 
     </div>
 
     <div class="sidenav">

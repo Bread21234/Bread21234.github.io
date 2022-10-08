@@ -122,10 +122,28 @@ h1, h3 {
     border-top: none;
 }
 
-.verticalFelx{
+.verticalFlex{
     display:flex;
     flex-direction:column;
 }
+
+.essay {
+    background-color: #FFE4C4;
+    border-radius: 25px;
+    display:flex;
+    flex-direction: column;
+    /*max-width: 80%;*/
+    max-width: 1000px;
+    height: auto;
+    padding: 25px;
+    color: #2F4F4F;
+}
+font {
+    font-family: "Courier New", monospace;
+    font-size:18px;
+    text-indent: 50px;
+}
+
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
