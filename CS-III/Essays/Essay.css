@@ -1,0 +1,113 @@
+body{
+    background-color: #2F4F4F;
+}
+
+.font {
+    font-family: "Lucida Console", monospace;
+    font-size:18px;
+    text-indent: 50px;
+}
+
+.cover{
+    display:flex;
+    text-align:center; 
+    padding: 20px;
+}
+
+.citations{
+    text-indent: -50px;
+    padding-left: 50px;
+    inline-size: 900px;
+    overflow-wrap:break-word;
+}
+
+.subHeaders{
+    text-indent:0px;
+}
+
+.essay {
+    background-color: #eff2f4;
+    border-style: outset;
+    border-color:grey;
+    display:flex;
+    flex-direction: column;
+    max-width: 1000px;
+    height: auto;
+    padding: 15px;
+    color: ;
+}
+
+.bodyContainer {
+    display: flex;
+    margin-left: 180px;
+    padding: 0px 10px;
+    flex-direction: column;
+}
+
+.centerFlex {
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.maincontainer { 
+    display: flex;
+}
+
+
+.p1Container {
+    display: flex;
+    /*background-color: yellow;*/
+    align-self:flex-start;
+}
+
+.p1Style {
+    color:black;
+    font-size: 16px;
+    display:block;
+    text-decoration:none;
+}
+h1 {
+    text-decoration: underline #1DCDFE;
+    font-family: "Lucida Console", monospace;	
+    font-size:30px;
+}
+
+
+.navBar{
+    width: 4%;
+    z-index: 1;
+    margin-left: -10%;
+    margin-top: 20px;
+    self-align: left;
+    text-align: center;
+    padding-bottom:20px;
+    
+}
+
+.navBar a{
+    font-size: 20px;
+    font-weight: bold;
+    color:black;
+    text-decoration:underline #1DCDFE;
+}
+
+
+a:hover {
+    /*text-decoration: underline overline black;
+     */
+    color: #1DCDFE;
+}
+
+
+.topicBox {    
+    background-color:#eff2f4;;
+    border: 5px;
+    border-style: outset;
+    border-color: grey;
+    padding: 15px;
+}
+

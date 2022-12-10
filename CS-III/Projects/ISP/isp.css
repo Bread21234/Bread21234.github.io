@@ -1,20 +1,11 @@
 body{
-  background-color: #2F455C;
-    
+    background-color: #2F4F4F;    
 }
 .bodyContainer {
     display:flex;
     flex-direction:column;
     gap: 20px;
     padding: 20px
-}
-
-.topicBox {
-    background-color:#eff2f4;;
-    border: 5px;
-    border-style: outset;
-    border-color: grey;
-    padding: 15px;
 }
 
 .topicBox {
