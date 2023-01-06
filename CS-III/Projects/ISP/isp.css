@@ -56,7 +56,6 @@ a {
     width: 4%;
     z-index: 1;
     margin-top: -20px;
-    self-align: left;
     text-align: center;
     padding-bottom:20px;
     
@@ -72,4 +71,9 @@ a:hover {
     /*text-decoration: underline overline black;
      */
     color: #1DCDFE;
+}
+
+u{
+    text-decoration: underline #1DCDFE;
+    font-weight: bold;
 }
