@@ -1,6 +1,11 @@
 body{
     background-color: #2F4F4F;    
 }
+
+.screenshot{
+    width: 400px;
+    height:auto;
+}
 .bodyContainer {
     display:flex;
     flex-direction:column;
